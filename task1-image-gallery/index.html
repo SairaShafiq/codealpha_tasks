@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Image Gallery</h1>
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="food">Food</button>
+      <button class="filter-btn" data-filter="Animals">Animals</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <img src="../images/nature1.jpg" alt="Nature" class="gallery-img" data-category="nature">
+    <img src="../images/nature2.jpg" alt="Nature" class="gallery-img" data-category="nature">
+    <img src="../images/nature3.jpg" alt="Nature" class="gallery-img" data-category="nature">
+    <img src="../images/food.jpg" alt="Food" class="gallery-img" data-category="food">
+    <img src="../images/fruits.jpg" alt="Food" class="gallery-img" data-category="food">
+    <img src="../images/cat.jpg" alt="Animal image" class="gallery-img" data-category="Animals">
+    <img src="../images/deer.jpg" alt="Animal image " class="gallery-img" data-category="Animals">
+    <img src="../images/husky.jpg" alt="Animalimage" class="gallery-img" data-category="Animals">
+  </main>
+  
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <span class="prev-btn" id="prevBtn">&#10094;</span>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+    <span class="lightbox-counter" id="lightboxCounter"></span>
+    </div>
+    <span class="next-btn" id="nextBtn">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    
+</body>
+</html>

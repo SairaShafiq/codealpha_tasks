@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccced2;
+}
+
+/* ---- Calculator card ---- */
+
+.calculator {
+  width: 300px;
+  background: #161b22;
+  border: 1px solid #232a34;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ---- Display ---- */
+
+.display {
+  background: #0d1117;
+  border-radius: 12px;
+  padding: 16px 14px;
+  margin-bottom: 16px;
+  text-align: right;
+  min-height: 78px;
+}
+
+.expression {
+  color: #c3c7cd;
+  font-size: 0.95rem;
+  min-height: 18px;
+  overflow-wrap: break-word;
+}
+
+.result {
+  color: #f0f6fc;
+  font-size: 2rem;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+/* ---- Buttons ---- */
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 16px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.08s ease, filter 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.94);
+}
+
+.num {
+  background: #21262d;
+  color: #e6edf3;
+}
+
+.num:hover {
+  filter: brightness(1.2);
+}
+
+.fn {
+  background: #2d333b;
+  color: #238dda;
+}
+
+.fn:hover {
+  filter: brightness(1.15);
+}
+
+.op {
+  background: #2d333b;
+  color: #238dda;
+}
+
+.op:hover {
+  filter: brightness(1.1);
+}
+
+.eq {
+  background: #238dda;
+  color: #f9f9fa;
+}
+
+.eq:hover {
+  filter: brightness(1.1);
+}
+
+.zero {
+  grid-column: span 2;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+     
+      <span>Saira Shafiq</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="My_CV/SairaShafiqCV.pdf" class="cv-btn">Download CV ↓</a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <div class="eyebrow">Hi, I'm</div>
+    <h1>Saira <span class="accent">Shafiq</span></h1>
+    <div class="role"><span id="roleText"></span><span class="cursor"></span></div>
+    <p class="bio">CS student turning ideas into working web apps — my FYP, Starlight Marquee, handles bookings across three user roles: customers, hall admins, and superadmins.</p>
+    <div class="socials">
+      <a href="https://github.com/SairaShafiq" aria-label="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/saira-shafiq-8699ab41a" aria-label="LinkedIn">in</a>
+      <a href="mailto:sairashafiq624@gmail.com" aria-label="Email">@</a>
+    </div>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">View My Work →</a>
+      <a href="#contact" class="btn-outline">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="photo-ring">
+      <div class="photo-inner"><img src="img/profilepic.jpg" alt="Saira Shafiq"></div>
+    </div>
+    <div class="floating-card tag1">&lt;/&gt; Code</div>
+    <div class="floating-card tag2">♥ Turning ideas into real solutions</div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-head reveal">
+    <div class="divider">About</div>
+    <h2>Get to <span class="accent">Know Me</span></h2>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-photo"><img src="img/Aboutpic.png" alt="Saira Shafiq"></div>
+    <div class="about-text">
+      <p>I'm a Computer Science student based in Pakistan, currently finishing my Final Year Project — Starlight Marquee, a wedding hall booking platform with roles for customers, hall admins, and superadmins.</p>
+      <p>I enjoy building clean, responsive interfaces and I'm steadily strengthening my backend skills alongside frontend work. I like learning by building — every project teaches me something I couldn't have picked up from a tutorial alone.</p>
+      <div class="about-stats">
+        <div class="stat"><div class="num">5+</div><div class="label">Projects Built</div></div>
+        <div class="stat"><div class="num">CS</div><div class="label">Final Year</div></div>
+        <div class="stat"><div class="num">3.87</div><div class="label">CGPA</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="section-head reveal">
+    <div class="divider">Skills</div>
+    <h2>What I <span class="accent">Work With</span></h2>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-card"><div class="skill-icon">H</div><h4>HTML5</h4><span>Structure</span></div>
+    <div class="skill-card"><div class="skill-icon">C</div><h4>CSS3</h4><span>Styling</span></div>
+    <div class="skill-card"><div class="skill-icon">JS</div><h4>JavaScript</h4><span>Interactivity</span></div>
+    <div class="skill-card"><div class="skill-icon">R</div><h4>React (learning)</h4><span>Frontend</span></div>
+    <div class="skill-card"><div class="skill-icon">DB</div><h4>Databases</h4><span>Backend basics</span></div>
+    <div class="skill-card"><div class="skill-icon">GIT</div><h4>Git & GitHub</h4><span>Version control</span></div>
+    <div class="skill-card"><div class="skill-icon">UX</div><h4>UI/UX Basics</h4><span>Design sense</span></div>
+    <div class="skill-card"><div class="skill-icon">PY</div><h4>Problem Solving</h4><span>Core CS</span></div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="section-head reveal">
+    <div class="divider">Projects</div>
+    <h2>My <span class="accent">Projects</span></h2>
+  </div>
+  <div class="projects-grid reveal">
+    <div class="project-card">
+  <div class="project-thumb">
+    <img src="../img/halls.png" alt="Wedding Hall Booking System preview" loading="lazy">
+  </div>
+  <div class="project-body">
+    <div class="project-title-row">
+      <h3>Wedding Hall Booking System</h3>
+      <span class="tag" style="background:transparent;border:1px solid currentColor;">Private</span>
+    </div>
+    <p>My FYP — a wedding hall booking web app supporting customers, hall admins, and superadmins, with hall listings, bookings, and payments.</p>
+    <span class="tag">Web Application</span>
+  </div>
+</div>
+
+    <div class="project-card">
+  <div class="project-thumb">
+    <img src="calc-demo.gif" alt="Calculator app demo" loading="lazy">
+  </div>
+  <div class="project-body">
+    <div class="project-title-row"><h3>Calculator App</h3><a href="#" aria-label="Open project">↗</a></div>
+    <p>A simple calculator app built with HTML, CSS, and JavaScript.</p>
+    <span class="tag">Web Application</span>
+  </div>
+</div>
+
+
+    <div class="project-card">
+      <div class="project-thumb"><img src="img/imagegallerypic.png" alt="Image-Gallery Project Screenshot"></div>
+      <div class="project-body">
+        <div class="project-title-row"><h3>Image Gallery</h3><a href="#" aria-label="Open project">↗</a></div>
+        <p>A responsive image gallery with category filters, a lightbox with next/prev navigation,and smooth hover animations.</p>
+        <span class="tag">Web Application</span>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-thumb"><img src="img/my-portfolio.png" alt="Image-Gallery Project Screenshot"></div>
+      <div class="project-body">
+        <div class="project-title-row"><h3>Personal Portfolio</h3><a href="#" aria-label="Open project">↗</a></div>
+        <p>This site — built with HTML, CSS, and JS to showcase my skills, projects, and contact info.</p>
+        <span class="tag">Web Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="contact">
+  <div class="section-head reveal">
+    <div class="divider">Contact</div>
+    <h2>Let's <span class="accent">Connect</span></h2>
+  </div>
+  <div class="contact-wrap reveal">
+    <div class="contact-info">
+      <h3>Say hello</h3>
+      <p>Have a project in mind or just want to connect? My inbox is open.</p>
+      <div class="contact-detail"><span class="ico">@</span> sairashafiq624@gmail.com</div>
+      <div class="contact-detail"><span class="ico">📍</span> Pakistan</div>
+      <div class="contact-detail"><span class="ico">in</span> linkedin.com/in/saira-shafiq-8699ab41a</div>
+      <div class="contact-detail"><span class="ico">GH</span> github.com/SairaShafiq</div>
+    </div>
+    <form action="https://formspree.io/f/xvkoogkw" method="POST">
+      <input type="text" name="name"placeholder="Your Name" required />
+      <input type="email"name="email" placeholder="Your Email" required />
+      <textarea rows="4" name="message"placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 <span class="accent">Saira Shafiq</span>. Built with HTML, CSS & JS.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
